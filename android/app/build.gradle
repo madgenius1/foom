@@ -1,0 +1,25 @@
+apply plugin: "com.android.application"
+apply plugin: "com.facebook.react"
+// Add Google Services plugin
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.foom.app"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+    implementation "com.facebook.react:react-native:+"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+    
+    // Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:32.2.2')
+    implementation 'com.google.firebase:firebase-analytics'
+}
