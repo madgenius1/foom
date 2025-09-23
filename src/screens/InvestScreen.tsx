@@ -501,4 +501,210 @@ const styles = StyleSheet.create({
     padding: 20,
     paddingTop: 40,
   },
-}}
+  title: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#333',
+  },
+  subtitle: {
+    fontSize: 16,
+    color: '#666',
+    marginTop: 4,
+  },
+  card: {
+    marginHorizontal: 16,
+    marginBottom: 16,
+    elevation: 4,
+  },
+  lastCard: {
+    marginBottom: 32,
+  },
+  cardTitle: {
+    fontSize: 18,
+    marginBottom: 12,
+  },
+  portfolioHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+  portfolioInfo: {
+    marginLeft: 16,
+  },
+  portfolioValue: {
+    fontSize: 32,
+    fontWeight: 'bold',
+    color: '#4CAF50',
+  },
+  portfolioLabel: {
+    fontSize: 14,
+    color: '#666',
+    marginTop: 4,
+  },
+  summaryRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    marginTop: 20,
+    paddingTop: 20,
+    borderTopWidth: 1,
+    borderTopColor: '#E0E0E0',
+  },
+  summaryItem: {
+    alignItems: 'center',
+  },
+  summaryValue: {
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+  summaryLabel: {
+    fontSize: 12,
+    color: '#666',
+    marginTop: 4,
+  },
+  tokensHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 16,
+  },
+  tokenBalance: {
+    fontSize: 36,
+    fontWeight: 'bold',
+    color: '#6200EE',
+    textAlign: 'center',
+    marginBottom: 8,
+  },
+  tokenValue: {
+    fontSize: 16,
+    color: '#666',
+    textAlign: 'center',
+    marginBottom: 20,
+  },
+  investButton: {
+    marginTop: 8,
+  },
+  investmentCard: {
+    marginBottom: 12,
+    elevation: 2,
+  },
+  investmentHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    marginBottom: 12,
+  },
+  investmentInfo: {
+    flex: 1,
+  },
+  investmentName: {
+    fontSize: 16,
+    fontWeight: '500',
+    marginBottom: 4,
+  },
+  investmentDate: {
+    fontSize: 12,
+    color: '#666',
+  },
+  investmentValues: {
+    alignItems: 'flex-end',
+  },
+  investmentValue: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#333',
+    marginBottom: 8,
+  },
+  allocationBar: {
+    height: 4,
+    borderRadius: 2,
+    marginBottom: 12,
+  },
+  investmentDetails: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 12,
+  },
+  allocationText: {
+    fontSize: 12,
+    color: '#666',
+  },
+  originalAmount: {
+    fontSize: 12,
+    color: '#666',
+  },
+  withdrawButton: {
+    alignSelf: 'flex-start',
+  },
+  mmfItem: {
+    paddingVertical: 8,
+  },
+  mmfDescription: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    flexWrap: 'wrap',
+    marginTop: 4,
+  },
+  mmfRate: {
+    fontSize: 14,
+    color: '#4CAF50',
+    fontWeight: '500',
+    marginRight: 12,
+  },
+  mmfRisk: {
+    fontSize: 12,
+    color: '#FF9800',
+    marginRight: 12,
+  },
+  mmfMin: {
+    fontSize: 12,
+    color: '#666',
+  },
+  dialogLabel: {
+    fontSize: 16,
+    fontWeight: '500',
+    marginTop: 16,
+    marginBottom: 8,
+  },
+  radioOption: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 8,
+  },
+  radioInfo: {
+    marginLeft: 8,
+    flex: 1,
+  },
+  radioTitle: {
+    fontSize: 14,
+    fontWeight: '500',
+  },
+  radioSubtitle: {
+    fontSize: 12,
+    color: '#666',
+    marginTop: 2,
+  },
+  dialogInput: {
+    marginTop: 16,
+  },
+  conversionText: {
+    fontSize: 14,
+    color: '#666',
+    marginTop: 8,
+    textAlign: 'center',
+  },
+  withdrawalInfo: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 12,
+    paddingHorizontal: 4,
+  },
+  withdrawalLabel: {
+    fontSize: 14,
+    color: '#666',
+  },
+  withdrawalValue: {
+    fontSize: 14,
+    fontWeight: '500',
+  },
+});
+
+export default InvestScreen;
