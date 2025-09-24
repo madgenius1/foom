@@ -1,17 +1,14 @@
 package com.foom.app;
 
 import android.app.Application;
+import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
-import com.facebook.react.shell.MainReactPackage;
-import java.util.Arrays;
-import java.util.List;
-
-import com.facebook.react.ReactHost;
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
 import com.facebook.react.defaults.DefaultReactNativeHost;
 import com.facebook.soloader.SoLoader;
+import java.util.List;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -25,10 +22,9 @@ public class MainApplication extends Application implements ReactApplication {
         @Override
         protected List<ReactPackage> getPackages() {
           @SuppressWarnings("UnnecessaryLocalVariable")
-          List<ReactPackage> packages = Arrays.<ReactPackage>asList(
-              new MainReactPackage()
-              // Add additional packages here if needed
-          );
+          List<ReactPackage> packages = new PackageList(this).getPackages();
+          // Packages that cannot be autolinked yet can be added manually here, for example:
+          // packages.add(new MyReactNativePackage());
           return packages;
         }
 
@@ -61,10 +57,5 @@ public class MainApplication extends Application implements ReactApplication {
       // If you opted-in for the New Architecture, we load the native entry point for this app.
       DefaultNewArchitectureEntryPoint.load();
     }
-  }
-
-  @Override
-  public ReactHost getReactHost() {
-    return DefaultReactNativeHost.getDefaultReactHost(this.getApplicationContext(), mReactNativeHost);
   }
 }
