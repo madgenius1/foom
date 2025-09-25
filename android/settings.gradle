@@ -1,5 +1,3 @@
-rootProject.name = "foom"
-
 pluginManagement {
     repositories {
         google()
@@ -10,7 +8,7 @@ pluginManagement {
     }
 }
 
-includeBuild('../node_modules/react-native-gradle-plugin')
+includeBuild('../node_modules/react-native/packages/react-native-gradle-plugin')
 
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
@@ -22,5 +20,7 @@ dependencyResolutionManagement {
         maven { url("$rootDir/../node_modules/jsc-android/dist") }
     }
 }
+
+rootProject.name = "foom"
 
 include(":app")
